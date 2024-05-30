@@ -14,9 +14,5 @@ class HomeErrorState extends HomeState{}
 
 class HomeNavigateToLoginPageActionState extends HomeActionState{}
 
-class HomeEditNotesSuccessState extends HomeState{}
-
-class HomeDeleteNotesSuccessState extends HomeState{}
-
 class HomeNavigateToAddStuentDetailsActionState extends HomeActionState{}
 
