@@ -11,8 +11,6 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   HomeBloc() : super(HomeInitial()) {
     on<HomeInitialFetchEvent>(homeInitialFetchEvent);
     on<HomeStudentsAddButtonClickedEvent>(homeStudentsAddButtonClickedEvent);
-    on<HomePopOverEditNotesDetailsButtonClickedEvent>(homePopOverEditNotesDetailsButtonClickedEvent);
-    on<HomePopOverDeleteNotesButtonClickedEvent>(homePopOverDeleteNotesButtonClickedEvent);
     on<HomeSignOutButtonClickedEvent>(homeSignOutButtonClickedEvent);
   }
 
@@ -24,14 +22,6 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
   FutureOr<void> homeStudentsAddButtonClickedEvent(HomeStudentsAddButtonClickedEvent event, Emitter<HomeState> emit) {
     emit(HomeNavigateToAddStuentDetailsActionState());
-  }
-
-  FutureOr<void> homePopOverEditNotesDetailsButtonClickedEvent(HomePopOverEditNotesDetailsButtonClickedEvent event, Emitter<HomeState> emit) {
-    emit(HomeEditNotesSuccessState());
-  }
-
-  FutureOr<void> homePopOverDeleteNotesButtonClickedEvent(HomePopOverDeleteNotesButtonClickedEvent event, Emitter<HomeState> emit) {
-    emit(HomeDeleteNotesSuccessState());
   }
 
   FutureOr<void> homeSignOutButtonClickedEvent(HomeSignOutButtonClickedEvent event, Emitter<HomeState> emit) {
