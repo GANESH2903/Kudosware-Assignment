@@ -7,9 +7,5 @@ class HomeInitialFetchEvent extends HomeEvent{}
 
 class HomeStudentsAddButtonClickedEvent extends HomeEvent{}
 
-class HomePopOverEditNotesDetailsButtonClickedEvent extends HomeEvent{}
-
-class HomePopOverDeleteNotesButtonClickedEvent extends HomeEvent{}
-
 class HomeSignOutButtonClickedEvent extends HomeEvent{}
 
