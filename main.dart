@@ -9,7 +9,7 @@ import 'welcomePage/invitationPage.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Platform.isAndroid ? await Firebase.initializeApp(
-      options: const FirebaseOptions(apiKey: 'AIzaSyArbQTf1_XCCSYNQTxjl8VqMOJQbmyAenc', appId: '1:849450879315:android:6ea341838e82d7deaeb9a6', messagingSenderId: '849450879315', projectId: 'task3-c579d')
+      options: const FirebaseOptions(apiKey: 'apikey', appId: 'appId', messagingSenderId: 'messagingSenderId', projectId: 'projectId')
   ) : await Firebase.initializeApp();
 
   runApp( MyApp());
